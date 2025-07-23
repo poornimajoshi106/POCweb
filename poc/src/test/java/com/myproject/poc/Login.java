@@ -244,6 +244,7 @@ public class Login extends Launchquit
 			   WebElement backhomebtn= driver.findElement(By.xpath("//*[@id=\'back-to-products\']"));
 			   backhomebtn.click();
 			   Thread.sleep(1000);
+			   //using implicit wait we can add
     		   
     		   
     	} catch (InterruptedException e) {

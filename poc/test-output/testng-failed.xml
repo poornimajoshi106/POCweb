@@ -6,7 +6,9 @@
     <classes>
       <class name="com.myproject.poc.Login">
         <methods>
+          <include name="Head"/>
           <include name="Loginfields"/>
+          <include name="Heading"/>
           <include name="Launch"/>
           <include name="quit"/>
         </methods>

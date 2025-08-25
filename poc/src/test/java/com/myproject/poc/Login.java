@@ -1,12 +1,12 @@
 package com.myproject.poc;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import java.time.Duration;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -44,6 +44,13 @@ public class Login extends Launchquit
     				System.out.println("Test failed");
     			}
         
+    }
+    
+    @Test
+    public void Head()
+    {
+    	Loginpage loginpage=new Loginpage(driver);
+    	loginpage.checkAssetionheading();
     }
     
     @Test

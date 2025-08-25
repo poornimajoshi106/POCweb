@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Parameters;
 
 public class Launchquit
@@ -22,7 +22,7 @@ public class Launchquit
 		System.out.println("Runs before every test method");
 		if(browsername.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\Eclipse-project\\poc\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\git\\POCweb\\poc\\Drivers\\chromedriver.exe");
 			driver=new ChromeDriver(); 
 			driver.get("https://www.saucedemo.com/");
 			try {
@@ -44,7 +44,7 @@ public class Launchquit
 		else if(browsername.equals("Firefox"))
 		{
 			try {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Lenovo\\Eclipse-project\\poc\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Lenovo\\git\\POCweb\\poc\\Drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 			driver.get("https://www.saucedemo.com/");

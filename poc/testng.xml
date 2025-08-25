@@ -7,23 +7,15 @@
       <class name="com.myproject.poc.Login">
      <methods>
           <include name="Heading"/>
+          <include name="Head"/>
           <include name="Loginfields"/>
+          
         </methods>
      </class>   
     </classes>
   </test> <!-- Test -->
   
-   <test thread-count="5" name="Test in Firefox browser">
-  <parameter name="browser" value="Firefox"></parameter>
-    <classes>
-      <class name="com.myproject.poc.Login">
-     <methods>
-          <include name="Heading"/>
-          <include name="Loginfields"/>
-        </methods>
-     </class>   
-    </classes>
-  </test> <!-- Test --> 
+ 
   
   
 </suite> <!-- Suite -->

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-com_myproject" class="navigator-link">
-              <span class="suite-name border-failed">com.myproject</span>
+              <span class="suite-name border-passed">com.myproject</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-com_myproject" class="navigator-link ">
-                    <span>C:\Users\Lenovo\Eclipse-project\poc\testng.xml</span>
+                    <span>C:\Users\Lenovo\git\POCweb\poc\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-com_myproject" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-com_myproject" class="hide-methods failed suite-com_myproject"> (hide)</a> <!-- hide-methods failed suite-com_myproject -->
-                      <a href="#" panel-name="suite-com_myproject" class="show-methods failed suite-com_myproject"> (show)</a> <!-- show-methods failed suite-com_myproject -->
-                    </span>
-                    <div class="method-list-content failed suite-com_myproject">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-com_myproject" title="com.myproject.poc.Login" class="method navigator-link" hash-for-method="Loginfields">Loginfields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-com_myproject -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,17 @@
                     <div class="method-list-content passed suite-com_myproject">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com_myproject" title="com.myproject.poc.Login" class="method navigator-link" hash-for-method="Head">Head</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-com_myproject" title="com.myproject.poc.Login" class="method navigator-link" hash-for-method="Heading">Heading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com_myproject" title="com.myproject.poc.Login" class="method navigator-link" hash-for-method="Loginfields">Loginfields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-com_myproject -->
@@ -131,74 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com_myproject" class="panel com_myproject">
-          <div class="suite-com_myproject-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.myproject.poc.Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Loginfields">
-                  </a> <!-- Loginfields -->
-                  <span class="method-name">Loginfields</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [12294a93-df58-42f6-abef-8c993df98217, getElementAttribute [name, id]]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.4, moz:accessibilityChecks: false, moz:buildID: 20250707120347, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15984, moz:profile: C:\Users\Lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (12294a93-df58-42f6-abef-8c993df98217)] -&gt; xpath: //*[@id=&apos;login-button&apos;]]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
-	at com.myproject.poc.Login.Loginfields(Login.java:86)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@64262615 rejected from java.util.concurrent.ThreadPoolExecutor@2e68983[Shutting down, pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 124]
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	... 4 more
-Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@64262615 rejected from java.util.concurrent.ThreadPoolExecutor@2e68983[Shutting down, pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 124]
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:969)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-	... 8 more
-Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@64262615 rejected from java.util.concurrent.ThreadPoolExecutor@2e68983[Shutting down, pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 124]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.asyncReceive(Http1AsyncReceiver.java:468)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:589)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:546)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:865)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com_myproject-class-failed -->
           <div class="suite-com_myproject-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -207,9 +135,23 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="Head">
+                  </a> <!-- Head -->
+                  <span class="method-name">Head</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Heading">
                   </a> <!-- Heading -->
                   <span class="method-name">Heading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loginfields">
+                  </a> <!-- Loginfields -->
+                  <span class="method-name">Loginfields</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,7 +159,7 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
         </div> <!-- panel com_myproject -->
         <div panel-name="test-xml-com_myproject" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\Eclipse-project\poc\testng.xml</span>
+            <span class="header-content">C:\Users\Lenovo\git\POCweb\poc\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,22 +172,12 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
       &lt;class name=&quot;com.myproject.poc.Login&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;Heading&quot;/&gt;
+          &lt;include name=&quot;Head&quot;/&gt;
           &lt;include name=&quot;Loginfields&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.myproject.poc.Login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test in chrome broswer --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test in Firefox browser&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.myproject.poc.Login&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;Heading&quot;/&gt;
-          &lt;include name=&quot;Loginfields&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.myproject.poc.Login --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test in Firefox browser --&gt;
 &lt;/suite&gt; &lt;!-- com.myproject --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,9 +190,6 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
             <ul>
               <li>
                 <span class="test-name">Test in chrome broswer (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test in Firefox browser (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,20 +215,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Loginfields')
 data.setCell(0, 2, 'com.myproject.poc.Login')
-data.setCell(0, 3, 65565);
+data.setCell(0, 3, 10744);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Heading')
 data.setCell(1, 2, 'com.myproject.poc.Login')
-data.setCell(1, 3, 6723);
+data.setCell(1, 3, 241);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Head')
+data.setCell(2, 2, 'com.myproject.poc.Login')
+data.setCell(2, 3, 134);
 window.suiteTableData['com_myproject']= { tableData: data, tableDiv: 'times-div-com_myproject'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-com_myproject">
               </div> <!-- times-div-com_myproject -->
             </div> <!-- times-div -->
@@ -327,58 +260,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.myproject.poc.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">Launch(Firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
                 <span class="method-name">Launch(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Heading</span>
-                <span class="method-start">14827 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Heading</span>
-                <span class="method-start">21473 ms</span>
+                <span class="method-start">11380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">21563 ms</span>
+                <span class="method-start">11630 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Launch(Chrome)</span>
-                <span class="method-start">28464 ms</span>
+                <span class="method-start">12356 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Head</span>
+                <span class="method-start">21782 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">28489 ms</span>
+                <span class="method-start">21924 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">Launch(Firefox)</span>
-                <span class="method-start">28491 ms</span>
+                <span class="method-name">Launch(Chrome)</span>
+                <span class="method-start">22402 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Loginfields</span>
-                <span class="method-start">151003 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Loginfields</span>
-                <span class="method-start">152974 ms</span>
+                <span class="method-start">31065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">214925 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">218551 ms</span>
+                <span class="method-start">41812 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

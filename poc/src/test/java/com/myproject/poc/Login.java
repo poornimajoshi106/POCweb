@@ -74,11 +74,13 @@ public class Login extends Launchquit
     			Username.sendKeys("standard_user");
     			Thread.sleep(1000); */
     		
+    		// Above code without using page object file locating element.
+    		//Below as per page object file we are storing locator and then using it to find on page.
     		
     		Loginpage loginfield=new Loginpage(driver);
     		loginfield.checkLoginfields();
     			
-    			WebElement Password= driver.findElement(By.xpath("//*[@id=\'password\']"));
+    		/*	WebElement Password= driver.findElement(By.xpath("//*[@id=\'password\']"));
     		    String Placeholder1Act= Password.getAttribute("placeholder");
     		    String Placeholder1Exp= "Password";
     		    
@@ -91,7 +93,7 @@ public class Login extends Launchquit
     			}
     		    
     		    Password.sendKeys("secret_sauce");
-    		    Thread.sleep(1000);
+    		    Thread.sleep(1000); */
     		    
     		    //4.Login button click
     		    WebElement Loginbutton= driver.findElement(By.xpath("//*[@id=\'login-button\']"));

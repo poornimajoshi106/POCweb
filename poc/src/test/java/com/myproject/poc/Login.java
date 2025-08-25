@@ -58,7 +58,7 @@ public class Login extends Launchquit
     {
     	//3. Login fields
     	try {
-    			WebElement Username= driver.findElement(By.xpath("//*[@id=\'user-name\']"));
+    		/*	WebElement Username= driver.findElement(By.xpath("//*[@id=\'user-name\']"));
     			String PlaceholderAct= Username.getAttribute("placeholder");
     			String PlaceholderExp= "Username";
     			
@@ -72,7 +72,10 @@ public class Login extends Launchquit
     			}
     			
     			Username.sendKeys("standard_user");
-    			Thread.sleep(1000);
+    			Thread.sleep(1000); */
+    		
+    		Loginpage loginfield=new Loginpage(driver);
+    		loginfield.checkLoginfields();
     			
     			WebElement Password= driver.findElement(By.xpath("//*[@id=\'password\']"));
     		    String Placeholder1Act= Password.getAttribute("placeholder");

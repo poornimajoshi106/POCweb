@@ -74,6 +74,7 @@ public class Login extends Launchquit
     			Username.sendKeys("standard_user");
     			Thread.sleep(1000); */
     		
+    		
     		Loginpage loginfield=new Loginpage(driver);
     		loginfield.checkLoginfields();
     			
